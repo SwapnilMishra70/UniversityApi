@@ -5,9 +5,9 @@ btn.addEventListener("click",async()=>{
     console.log(country);
     let colArr = await getColleges(country);
     // console.log(colleges);
-    await show(colArr);
+    show(colArr);
 });
-async function show(colArr){
+function show(colArr){
     let list = document.querySelector("#list");
     list.innerText = "";
     for(col of colArr){
